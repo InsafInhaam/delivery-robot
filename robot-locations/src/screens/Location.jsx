@@ -57,7 +57,7 @@ const Location = () => {
     <div className="container">
       <h1 className="heading">Robot Delivery Location Picker</h1>
       <div className="form-group">
-        <h3>Pickup Location:</h3>
+        <h4>Pickup Location:</h4>
         <GooglePlacesAutocomplete
           selectProps={{
             onChange: setPickupLocation,
@@ -65,7 +65,7 @@ const Location = () => {
         />
       </div>
       <div className="form-group">
-        <h3>Delivery Location:</h3>
+        <h4>Delivery Location:</h4>
         <GooglePlacesAutocomplete
           selectProps={{
             onChange: setDeliveryLocation,
