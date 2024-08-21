@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const robotSchema = new mongoose.Schema({
-  name: { type: String, required: true }, // Added required validation
+  name: { type: String, required: true },
   status: { type: String, default: "idle" },
   lastKnownCoordinates: {
     latitude: { type: Number, required: false },

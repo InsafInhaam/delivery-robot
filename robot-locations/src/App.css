@@ -1,18 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Open Sans", sans-serif;
+  /* background-color: #f8f9fa; */
 }
 
 a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
   text-decoration: none;
   color: #000;
 }
@@ -21,13 +20,13 @@ section {
   height: 85vh;
 }
 
-.bg-black{
+.bg-black {
   background-color: #000;
 }
 
 /* General Container */
 .container {
-  max-width: 1800px;
+  max-width: 1400px;
   margin-top: 50px;
 }
 
@@ -38,9 +37,9 @@ section {
 }
 
 /* Form Elements */
-form {
+/* form {
   width: 500px;
-}
+} */
 
 .form-group {
   margin-bottom: 20px;
@@ -66,6 +65,20 @@ form {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.button-bg {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 30px;
+  padding: 10px 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(243, 243, 243);
+  cursor: pointer;
+  outline: none;
 }
 
 /* Login and Registration Form Styles */
@@ -182,11 +195,26 @@ form {
 
 /* navbar */
 nav.navbar {
-  padding: 10px;
+  padding: 10px 25px;
+}
+
+.navbar-brand {
+  width: 100px;
 }
 
 .navbar-brand img {
   width: 50px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+a#navbarDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div#navbarTogglerDemo02 {
@@ -200,6 +228,13 @@ div#navbarTogglerDemo02 img {
   object-fit: cover;
 }
 
+.navbar-nav .dropdown-menu {
+  display: block;
+  left: -120px;
+}
+
+/* robot form */
+
 .place-robot-form {
   padding: 20px;
   border: 2px solid #d3d2d2;
@@ -209,39 +244,119 @@ div#navbarTogglerDemo02 img {
 .map {
   height: 85vh;
 }
-.home-order-checkout{
+.home-order-checkout {
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px;
   padding: 16px;
-
 }
 
+/* bookings page */
 
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
 
+.card-body {
+  padding: 20px;
+}
 
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
+.card-text {
+  margin-bottom: 10px;
+}
 
+.btn-outline-secondary {
+  border-radius: 20px;
+}
 
+.card img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+/* auth page */
+.auth .login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
+.auth .login-container form {
+  text-align: center;
+}
 
+.auth .form-control {
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+}
 
+.auth .btn-custom {
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
 
+.auth .btn-google,
+.auth .btn-apple,
+.auth .btn-qr {
+  border-radius: 25px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.auth .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.auth .divider::before,
+.auth .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dee2e6;
+}
+.auth .divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+.auth .divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+.auth .form-text {
+  text-align: center;
+  color: #6c757d;
+  font-size: 12px;
+}
 
+/* terms and condiotns */
+.terms-conditions {
+  height: 200px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
 
+.terms-conditions p {
+  font-size: 13px;
+  font-weight: 500;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.terms-conditions .see-terms {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: underline;
+}
